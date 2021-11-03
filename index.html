@@ -4,31 +4,50 @@
   <title>The Art of Bartending</title>
   <link rel="icon" type="image/x-icon" href="Everything else/Pictures/General use pictures/favicon.png">
   <style>
+    html,
     body {
-      padding: 0;
       margin: 0;
     }
 
     table {
-      padding: 0;
-      margin: 0;
-      border-collapse: collapse;
+      width: 100%;
+      height: 100vh;
+      border: 1px dotted blue;
     }
 
-    .SideBorders {
-      width: 10%;
-      background-color: green;
-      border: black solid;
+    td {
+      border: 1px dotted blue;
+    }
+
+    .r1 td,
+    .r3 td {
+      height: 50px;
+    }
+
+    .r2 td {
+      vertical-align: top;
     }
   </style>
 </head>
 
 <body>
-  <table width="100%">
-    <tr style="height: 979px;">
-      <td style="width: 10%; background-color: green;"></td>
-      <td></td>
-      <td style="width: 10%; background-color: green;"></td>
+  <table>
+    <tr class="r1">
+      <td>Header</td>
+    </tr>
+    <tr class="r2">
+      <td>Content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus sapien erat, ac hendrerit
+        quam euismod vitae. Morbi sed dolor in quam consequat hendrerit condimentum fringilla arcu. Nulla mollis, neque
+        non tincidunt auctor, libero ex viverra felis, a tempor purus leo eget justo. Aenean mattis est tincidunt ante
+        tincidunt, quis aliquam neque bibendum. Sed id mauris non ligula malesuada porta in nec velit. Aliquam a erat
+        elementum, dapibus dui sed, pulvinar mauris. Duis egestas luctus turpis non feugiat. Mauris sit amet ornare
+        quam. Nunc rutrum orci lacus, vel commodo arcu convallis sed. Donec et urna tellus. Integer pulvinar ante at
+        urna molestie, sit amet euismod turpis venenatis. Etiam congue quis mi in pretium. Aenean commodo ante et odio
+        ultricies, sed sodales nisi tincidunt. Sed convallis tincidunt aliquam. Duis congue magna id congue tincidunt.
+      </td>
+    </tr>
+    <tr class="r3">
+      <td>Footer</td>
     </tr>
   </table>
 </body>
