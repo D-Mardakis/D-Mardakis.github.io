@@ -64,7 +64,11 @@
 </head>
 
 <body>
-    <img src="Everything else\Pictures\General use pictures\banner-2-small.png" alt="Banner: The Art of Bartending" style="width: 100%;">
+    <picture>
+        <source media="(max-width:480px)" alt="Banner: The Art of Bartending" srcset="Everything else\Pictures\General use pictures\banner-2-mobile.png" width="100%">
+        <source media="(min-width:650px)" alt="Banner: The Art of Bartending" srcset="Everything else\Pictures\General use pictures\banner-2-small.png" width="100%">
+        <img alt="Banner: The Art of Bartending" src="Everything else/Pictures/General use pictures/banner-2.png" width="100%">
+    </picture>
     <div class="section">
         <div class="col span_1_of_4"><p>Bartending Tools</p></div>
         <div class="col span_1_of_4"><p>Types of Alcohol</p></div>
