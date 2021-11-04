@@ -20,78 +20,63 @@
       padding: 15px;
     }
 
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding: 15px;
-      border: 1px solid red;
-    }
-
-    .col-1 {
-      width: 8.33%;
-    }
-
-    .col-2 {
-      width: 16.66%;
-    }
-
-    .col-3 {
-      width: 25%;
-    }
-
-    .col-4 {
-      width: 33.33%;
-    }
-
-    .col-5 {
-      width: 41.66%;
-    }
-
-    .col-6 {
-      width: 50%;
-    }
-
-    .col-7 {
-      width: 58.33%;
-    }
-
-    .col-8 {
-      width: 66.66%;
-    }
-
-    .col-9 {
-      width: 75%;
-    }
-
-    .col-10 {
-      width: 83.33%;
-    }
-
-    .col-11 {
-      width: 91.66%;
-    }
-
-    .col-12 {
+    .banner {
       width: 100%;
       padding: 0;
       border: none;
     }
 
     img {
-      display: block;
-      object-fit: scale-down;
-      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      margin-top: 10vh;
+      background-color: #2196F3;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: auto auto;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "Tools Cocktails Definition Definition Definition"
+        "Alcohol Credits Definition Definition Definition";
+    }
+
+    .Alcohol {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      grid-area: Alcohol;
+    }
+
+    .Tools {
+      grid-area: Tools;
+    }
+
+    .Cocktails {
+      grid-area: Cocktails;
+    }
+
+    .Credits {
+      grid-area: Credits;
+    }
+
+    .Definition {
+      grid-area: Definition;
     }
   </style>
 </head>
 
 <body>
-  <div class="col-12"><img src="Everything else/Pictures/General use pictures/banner-2.png"> </div>
+  <div class="banner"><img src="Everything else/Pictures/General use pictures/banner-2.png"></div>
+  <div class="container" style="margin-left:auto; margin-right: auto;">
+    <div class="Alcohol">Alcohol</div>
+    <div class="Tools"> Tools</div>
+    <div class="Cocktails">Cocktails</div>
+    <div class="Credits">Credits</div>
+    <div class="Definition">What is Bartending</div>
+  </div>
 </body>
 
 </html>
