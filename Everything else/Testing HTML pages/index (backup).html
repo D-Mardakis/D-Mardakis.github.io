@@ -5,33 +5,66 @@
   <title>The Art of Bartending</title>
   <link rel="icon" type="image/x-icon" href="Everything else/Pictures/General use pictures/favicon.png">
   <style>
-    * {
-      box-sizing: border-box;
+    /*  SECTIONS  */
+    .section {
+      clear: both;
+      padding: 0px;
+      margin: 0px;
     }
 
-    body,
-    html {
-      margin: 0;
-      padding: 0
+    /*  COLUMN SETUP  */
+    .col {
+      display: block;
+      float: left;
+      margin: 1% 0 1% 1.6%;
     }
 
-    .content {
-      display: flex;
+    .col:first-child {
+      margin-left: 0;
     }
 
-    .text {
-      background: #545454;
-      color: white;
-      flex: 1;
+
+    /*  GROUPING  */
+    .group:before,
+    .group:after {
+      content: "";
+      display: table;
     }
 
-    .image {
-      flex: 2;
+    .group:after {
+      clear: both;
     }
 
-    img {
+    .group {
+      zoom: 1;
+      /* For IE 6/7 */
+    }
+
+    /*  GRID OF THREE  */
+    .span_3_of_3 {
       width: 100%;
-      vertical-align: top;
+    }
+
+    .span_2_of_3 {
+      width: 66.1%;
+    }
+
+    .span_1_of_3 {
+      width: 32.2%;
+    }
+
+    /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+    @media only screen and (max-width: 480px) {
+      .col {
+        margin: 1% 0 1% 0%;
+      }
+
+      .span_3_of_3,
+      .span_2_of_3,
+      .span_1_of_3 {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -39,7 +72,8 @@
 <body>
   <div class="content">
     <div class="image">
-      <img src="C:\Users\L4wbr1ng3r\github\D-Mardakis.github.io\Everything else\Pictures\General use pictures\banner-2.png">
+      <img
+        src="C:\Users\L4wbr1ng3r\github\D-Mardakis.github.io\Everything else\Pictures\General use pictures\banner-2.png">
     </div>
     <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, id.</div>
   </div>

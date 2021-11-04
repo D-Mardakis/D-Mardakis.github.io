@@ -1,82 +1,86 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Bartending</title>
-  <link rel="icon" type="image/x-icon" href="Everything else/Pictures/General use pictures/favicon.png">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    body,
-    html {
-      margin: 0;
-      padding: 0;
-    }
+    <title>Example of the Responsive Grid System</title>
+    <meta name="description"
+        content="This is the Responsive Grid System, a quick, easy and flexible way to create a responsive web site.">
+    <meta name="keywords" content="responsive, grid, system, web design">
 
-    .header {
-      border: 1px solid red;
-      padding: 15px;
-    }
+    <meta name="author" content="www.grahamrobertsonmiller.co.uk">
 
-    .banner {
-      width: 100%;
-      padding: 0;
-      border: none;
-    }
+    <meta http-equiv="cleartype" content="on">
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+    <link rel="shortcut icon" href="/favicon.ico">
 
-    .container {
-      margin-top: 10vh;
-      background-color: #2196F3;
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      grid-template-rows: auto auto;
-      gap: 10px 10px;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "Tools Cocktails Definition Definition Definition"
-        "Alcohol Credits Definition Definition Definition";
-    }
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .Alcohol {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      grid-area: Alcohol;
-    }
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/html5reset.css" media="all">
+    <link rel="stylesheet" href="css/col.css" media="all">
+    <link rel="stylesheet" href="css/2cols.css" media="all">
+    <link rel="stylesheet" href="css/3cols.css" media="all">
+    <link rel="stylesheet" href="css/4cols.css" media="all">
+    <link rel="stylesheet" href="css/5cols.css" media="all">
+    <link rel="stylesheet" href="css/6cols.css" media="all">
+    <link rel="stylesheet" href="css/7cols.css" media="all">
+    <link rel="stylesheet" href="css/8cols.css" media="all">
+    <link rel="stylesheet" href="css/9cols.css" media="all">
+    <link rel="stylesheet" href="css/10cols.css" media="all">
+    <link rel="stylesheet" href="css/11cols.css" media="all">
+    <link rel="stylesheet" href="css/12cols.css" media="all">
 
-    .Tools {
-      grid-area: Tools;
-    }
+    <style type="text/css">
+        body {
+            padding: 2em;
+            font: 100%/1.4 'Helvetica Neue', arial, helvetica, helve, sans-serif;
+        }
 
-    .Cocktails {
-      grid-area: Cocktails;
-    }
+        h1 {
+            font-size: 2.2em;
+            padding: 0 0 .5em 0;
+        }
 
-    .Credits {
-      grid-area: Credits;
-    }
+        h2 {
+            font-size: 1.5em;
+        }
 
-    .Definition {
-      grid-area: Definition;
-    }
-  </style>
+        .header {
+            padding: 1em 0;
+        }
+
+        .col {
+            background: #ccc;
+            padding: 1em 0;
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body>
-  <div class="banner"><img src="Everything else/Pictures/General use pictures/banner-2.png"></div>
-  <div class="container" style="margin-left:auto; margin-right: auto;">
-    <div class="Alcohol">Alcohol</div>
-    <div class="Tools"> Tools</div>
-    <div class="Cocktails">Cocktails</div>
-    <div class="Credits">Credits</div>
-    <div class="Definition">What is Bartending</div>
-  </div>
+    <img src="C:\Users\L4wbr1ng3r\github\D-Mardakis.github.io\Everything else\Pictures\General use pictures\banner-2.png" style="width: 100%;">
+    <div class="section">
+        <div class="col span_1_of_4"><p>Bartending Tools</p></div>
+        <div class="col span_1_of_4"><p>Types of Alcohol</p></div>
+    </div>
+    <div class="section">
+        <div class="col span_12_of_12">
+            <p> What is Bartending?</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="col span_1_of_4" style="opacity: 0;"></div>
+        <div class="col span_1_of_4" style="opacity: 0;"></div>
+        <div class="col span_1_of_4"><p>Famous Cocktails</p></div>
+        <div class="col span_1_of_4"><p>Credits</p></div>
+    </div>
 </body>
 
 </html>
