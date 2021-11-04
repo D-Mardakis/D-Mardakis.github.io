@@ -8,6 +8,11 @@
     * {
       box-sizing: border-box;
     }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
     .left {
       background-color: #2196F3;
@@ -18,23 +23,25 @@
     }
 
     .main {
-      background-color: #f1f1f1;
-      padding: 20px;
+      padding: 0px;
+      margin: 0;
       float: left;
       width: 60%;
       /* The width is 60%, by default */
     }
 
     .right {
-      background-color: #04AA6D;
+      background-color: #545454;
       padding: 20px;
       float: left;
-      width: 20%;
+      width: 40%;
+      text-align: right;
+      height: 50vh;
       /* The width is 20%, by default */
     }
 
     /* Use a media query to add a break point at 800px: */
-    @media screen and (max-width: 800px) {
+    @media (max-width: 800px) {
 
       .left,
       .main,
@@ -42,19 +49,20 @@
         width: 100%;
         /* The width is 100%, when the viewport is 800px or smaller */
       }
+
+      .right {
+        margin-top: 5px;
+        height: 50px;
+      }
     }
+    
   </style>
 </head>
 
 <body>
-  <div class="left">
-    <p>Left Menu</p>
-  </div>
-
   <div class="main">
-    <p>Main Content</p>
+    <img src="C:\Users\L4wbr1ng3r\github\D-Mardakis.github.io\Everything else\Pictures\General use pictures\banner-2.png" style="width: 100%;">
   </div>
-
   <div class="right">
     <p>Right Content</p>
   </div>
