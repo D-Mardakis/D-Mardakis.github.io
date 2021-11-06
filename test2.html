@@ -1,8 +1,23 @@
 <html>
-    <head>
-        <title>Lol</title>
-    </head>
-    <body>
-        <video src="media\Gifs\Debugging\lol2.mp4" controls autoplay height="100%"></video>
-    </body>
+
+<head>
+    <title>Lol</title>
+    <style>
+        .mobile {
+            height: 100%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mobile {
+                height: auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video class="mobile" src="media\Gifs\Debugging\lol2.mp4" controls autoplay></video>
+</body>
+
 </html>
