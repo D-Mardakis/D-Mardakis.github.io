@@ -31,8 +31,14 @@
     <link rel="stylesheet" href="media\Responsive Grid System\css\11cols.css" media="all">
     <link rel="stylesheet" href="media\Responsive Grid System\css\12cols.css" media="all">
     <link rel="stylesheet" href="media/Responsive Grid System/css/mobile_formating.css" media="all">
+    <link rel="stylesheet" href="media/Responsive Grid System/css/buttons.css" media="all">
 
     <style type="text/css">
+        @font-face {
+            font-family: FontTest;
+            src: url(media/Fonts/Tafelschrift.ttf);
+        }
+
         body {
             height: 100%;
             padding: 0;
@@ -67,16 +73,6 @@
             text-align: center;
         }
 
-        .button {
-            height: 250px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: red;
-        }
-
         .i_s {
             max-width: 100%;
             max-height: 100%;
@@ -102,14 +98,19 @@
             <div class="section" style="box-sizing: border-box; padding: 2em;">
                 <div class="col span_1_of_4 button">
                     <img src="media/Pictures/MainPage/Untitled-1.png" class="i_s">
-                </div>
-                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);"><img
-                        src="media\Pictures\Debuging\no-texture.png" class="i_s"></div>
-                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
-                    <img src="media\Pictures\Debuging\no-texture.png" class="i_s">
+                    <div class="centered button_font">Bartender's Tools</div>
                 </div>
                 <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
                     <img src="media\Pictures\Debuging\no-texture.png" class="i_s">
+                    <div class="centered button_font"><div style="font-size: 50; font-weight: bold;">Types of</div><div style="font-size: 50; font-weight: bold;">Alcohol</div></div>
+                </div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
+                    <img src="media\Pictures\Debuging\no-texture.png" class="i_s">
+                    <div class="centered button_font">Famous Cocktails</div>
+                </div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
+                    <img src="media\Pictures\Debuging\no-texture.png" class="i_s">
+                    <div class="centered button_font">Distinguished Bartenders</div>
                 </div>
             </div>
             <div class="section" style="margin: 0;">
