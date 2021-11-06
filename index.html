@@ -43,6 +43,7 @@
             height: 100%;
             padding: 0;
         }
+
         h1 {
             font-size: 2.2em;
             padding: 0 0 .5em 0;
@@ -62,43 +63,61 @@
         }
 
         .col {
-            background: #ccc;
             padding: 1em 0;
             text-align: center;
+        }
+
+        .button {
+            height: 250px
+        }
+
+        .i_s {
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 
 </head>
 
-<body style="background: #545454;">
-    <div class="section" style="box-sizing: border-box;">
+<body style="background-image: url(/media/Pictures/General/background-wood-1.jpg);">
+    <div class="section" style="display: flex; align-items: stretch;">
         <div class="col bar"></div>
+        <picture style="margin: 0;" class="mobile_img">
+            <source media="(max-width: 480px)" srcset="media\Pictures\MainPage\banner-2-mobile.png">
+            <img src="media\Pictures\MainPage\banner-2-test.png" width="100%">
+        </picture>
+        <div class="col bar"></div>
+    </div>
+    <div class="section" style="display: flex; align-items: stretch;">
         <div class="col MainPage" style="margin: 0; padding: 0; background: none;">
-            <picture style="margin: 0;">
-                <source media="(max-width: 480px)" srcset="media\Pictures\MainPage\banner-2-mobile.png">
-                <img src="media\Pictures\MainPage\banner-2-test.png" width="100%">
-            </picture>
+
             <div class="section" style="box-sizing: border-box; padding: 2em;">
-                <div class="col span_1_of_4" style="background: rgb(14, 168, 230);">Test</div>
-                <div class="col span_1_of_4" style="background: rgb(14, 168, 230);">Test</div>
-                <div class="col span_2_of_4" style="background: rgb(14, 168, 230);">Empty space</div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
+                    <img src="media\Pictures\Debbuging\no-texture.png" class="i_s">
+                </div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);"><img
+                        src="media\Pictures\Debbuging\no-texture.png" class="i_s"></div>
+                <div class="col span_2_of_4 " style="background: rgb(14, 168, 230);">Empty space</div>
             </div>
             <div class="section" style="box-sizing: border-box; padding: 2em;">
                 <div class="col span_2_of_2" style="background: rgb(14, 168, 230);">Definition of bartending</div>
             </div>
             <div class="section" style="box-sizing: border-box; padding: 2em;">
                 <div class="col span_2_of_4" style="background: rgb(14, 168, 230);">Empty space</div>
-                <div class="col span_1_of_4" style="background: rgb(14, 168, 230);">Test</div>
-                <div class="col span_1_of_4" style="background: rgb(14, 168, 230);">Test</div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
+                    <img src="media\Pictures\Debbuging\no-texture.png" class="i_s">
+                </div>
+                <div class="col span_1_of_4 button" style="background: rgb(14, 168, 230);">
+                    <img src="media\Pictures\Debbuging\no-texture.png" class="i_s">
+                </div>
             </div>
             <div class="section" style="margin: 0;">
-                <div class="col span_2_of_2" style="background: rgb(63, 63, 63); margin: 0; height: 5vh; margin-top: 2em;"></div>
+                <div class="col span_2_of_2"
+                    style="background: rgb(63, 63, 63); margin: 0; height: 5vh; margin-top: 2em;">
+                </div>
             </div>
         </div>
-        <div class="col bar"></div>
-        
     </div>
- 
 
 
 
@@ -118,6 +137,12 @@
             <div class="col span_1_of_4"><p>Sources and Credits</p></div>
         </div>
     </div> -->
+
+
+    <!-- <picture style="margin: 0;">
+                <source media="(max-width: 480px)" srcset="media\Pictures\MainPage\banner-2-mobile.png">
+                <img src="media\Pictures\MainPage\banner-2-test.png" width="100%">
+            </picture> -->
 </body>
 
 </html>
