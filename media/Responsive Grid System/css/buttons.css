@@ -1,155 +1,149 @@
-.button {
-    height: 250px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-}
-
-.button div {
-    transition-duration: 0.4s;
-    visibility: hidden;
-    animation: fadeOut ease 0.4s;
-    -webkit-animation: fadeOut ease 0.4s;
-    -moz-animation: fadeOut ease 0.4s;
-    -o-animation: fadeOut ease 0.4s;
-    -ms-animation: fadeOut ease 0.4s;
-}
-
-.button:hover {
-    transition-duration: 0.4s;
-}
-
-.button:hover div {
-    visibility: visible;
-    animation: fadeIn ease 0.4s;
-    -webkit-animation: fadeIn ease 0.4s;
-    -moz-animation: fadeIn ease 0.4s;
-    -o-animation: fadeIn ease 0.4s;
-    -ms-animation: fadeIn ease 0.4s;
-    
-}
-
-.button img {
-    transition-duration: 0.4s;
-}
-
-.button:hover img {
-    transition-duration: 0.4s;
-    transform: scale(1.2);
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.button_font {
-    font-family: Arial;
-    font-style: bold;
-    font-size: 50;
-    font-weight: bold;
+.mb_bt {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+@media (pointer: fine) {
+    .button {
+        height: 350px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
     }
-
-    100% {
-        opacity: 1;
+    .button:hover {
+        transition-duration: 0.4s;
+    }
+    .button div {
+        transition-duration: 0.4s;
+        visibility: hidden;
+        animation: fadeOut ease 0.4s;
+        -webkit-animation: fadeOut ease 0.4s;
+        -moz-animation: fadeOut ease 0.4s;
+        -o-animation: fadeOut ease 0.4s;
+        -ms-animation: fadeOut ease 0.4s;
+    }
+    .button:hover div {
+        visibility: visible;
+        animation: fadeIn ease 0.4s;
+        -webkit-animation: fadeIn ease 0.4s;
+        -moz-animation: fadeIn ease 0.4s;
+        -o-animation: fadeIn ease 0.4s;
+        -ms-animation: fadeIn ease 0.4s;
+    }
+    .button img {
+        transition-duration: 0.4s;
+    }
+    .button:hover img {
+        transition-duration: 0.4s;
+        transform: scale(1.2);
+    }
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .button_font {
+        font-family: Arial;
+        font-style: bold;
+        font-size: 50;
+        font-weight: bold;
+        color: white;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-moz-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-webkit-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-o-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @-ms-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
 }
 
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.mb_bt {
+    visibility: hidden;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
+@media only screen and (pointer: coarse) {
+    .mb_bt {
+        visibility: visible;
     }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
+    .button_font {
+        visibility: hidden;
     }
 }
